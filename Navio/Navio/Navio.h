@@ -5,9 +5,8 @@ class Navio
 {
 
 public:
-	Navio(); //construtor
 	
-	Navio(float, float, int, int, float, float); //construtor com variaveis
+	Navio(float = 0.0, float = 0.0, int = 0, int = 0, float = 0.0, float = 0.0); //construtor com variaveis
 	
 	Navio(const Navio &); //construtor de copia
 	
@@ -19,11 +18,11 @@ public:
 	void mododeAlerta();
 
 private:
-	static int versaoSoftware;  //variavel estatica
-	const static int velocidadeMaxima = 40; //variavel estatica e constante 
+	static float versaoSoftware;  //variavel estatica
+	const static int VELOCIDADEMAXIMA = 40; //variavel estatica e constante 
 	float altura;
 	float comprimento;
-	int capacCombustivel;
+	const int CAPACCOMBUSTIVEL;
 	int passageiros;
 	float latitude;
 	float longitude;
