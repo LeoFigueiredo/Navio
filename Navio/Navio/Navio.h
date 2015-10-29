@@ -1,6 +1,11 @@
 #ifndef NAVIO_H
 #define NAVIO_H
 
+#include <iostream>
+
+using std::cout;
+
+
 class Navio
 {
 
@@ -11,7 +16,7 @@ public:
 	Navio(const Navio &); //construtor de copia
 	
 	~Navio(); //destrutor
-	
+	void imprimeAtributos();
 	void embarcarPessoas();
 	void desembarcarPessoas();      
 	void hospedarPessoas();        
@@ -20,13 +25,13 @@ public:
 private:
 	static float versaoSoftware;  //variavel estatica
 	const static int VELOCIDADEMAXIMA = 40; //variavel estatica e constante 
-	float altura;
+	float *altura;
 	float comprimento;
 	const int CAPACCOMBUSTIVEL;
 	int passageiros;
 	float latitude;
 	float longitude;
-
+    
 };
 
 #endif // NAVIO_H
