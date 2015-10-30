@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1446164780 source:c:\users\aluno\git\navio\navio2\navio\main.cpp
+	<iostream>
+	"Navio.h"
+
+1446165683 c:\users\aluno\git\navio\navio2\navio\navio.h
+	<iostream>
+	<string>
+
+1446164744 source:c:\users\aluno\git\navio\navio2\navio\navio.cpp
+	"Navio.h"
+
